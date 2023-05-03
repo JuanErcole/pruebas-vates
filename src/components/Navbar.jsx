@@ -16,24 +16,18 @@ export const Navbar = () => {
   const buttons = [
     {
       id: 1,
-      title: 'carrito',
-      path: '/cart',
-      content: 'Carrito',
-      open: "div1",
+      title: 'link 1',
+      name: "div1",
     },
     {
       id: 2,
-      title: 'compras',
-      path: '/logout',
-      content: 'Deseas salir?',
-      open: "div2",
+      title: 'link 1',
+      name: "div2",
     },
     {
       id: 3,
-      title: 'dashboard',
-      path: '/dashboard',
-      content: 'Dashboard',
-      open: "div3",
+      title: 'link 3',
+      name: "div3",
     }
   ]
 
@@ -45,8 +39,6 @@ export const Navbar = () => {
       ...initialState,
       [name]: true
     })
-    console.log(name);
-
   }
 
   return (
@@ -54,9 +46,9 @@ export const Navbar = () => {
       <nav>
         {buttons.map(button => (
           <button
-            onClick={handleClick} 
             key={button.id} 
-            name={button.open} 
+            onClick={handleClick} 
+            name={button.name} 
           >
             {button.title}
           </button>
