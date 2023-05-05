@@ -8,11 +8,12 @@ export const HomePage = () => {
 
 
   return (
-    <Grid 
+    <>
+      <Grid 
       container 
       textAlign='center'
       spacing={2}
-    >
+      >
       <Grid item xs={12}>
         <Typography variant="h1">
           Bienvenido
@@ -23,6 +24,8 @@ export const HomePage = () => {
           Esta es una aplicación de prueba para el curso de React y fastapi.
         </Typography>
       </Grid>
-    </Grid>
+      </Grid>
+    </>
+    
   )
 }

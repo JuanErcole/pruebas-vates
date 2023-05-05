@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { NavLink } from 'react-router-dom';
 
+
 const pages = [
   {
     path: '/',
@@ -50,7 +51,11 @@ export const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar 
+      position="fixed" 
+      color="primary" 
+      fontFamily="Montserrat"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ color: '#000000', display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -62,9 +67,8 @@ export const Navbar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.5rem',
               color: '#000000',
               textDecoration: 'none',
             }}

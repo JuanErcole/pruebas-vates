@@ -1,14 +1,19 @@
 
 import { BrowserRouter } from 'react-router-dom'
 import { Navigation } from './routes/Navigation'
+import { Container } from "@mui/material";
 
 function App() {
 
   return (
 
-    <BrowserRouter>
-      <Navigation />
-    </BrowserRouter>
+    <Container>
+      <BrowserRouter>
+        <Navigation />
+      </BrowserRouter>
+    </Container>
+      
+    
 
   )
 }
