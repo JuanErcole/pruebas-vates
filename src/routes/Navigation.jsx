@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { HomePage } from '../pages/HomePage'
+import { HomePage } from '../pages/HomePage/HomePage'
 import { ReactPage } from '../pages/ReactPage'
 import { PythonPage } from '../pages/PythonPage'
 import { Navbar } from '../components/Navbar'
@@ -15,6 +15,7 @@ export const Navigation = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/react" element={<ReactPage />} />
           <Route path="/python" element={<PythonPage />} />
+          <Route path="/*" element={<HomePage />} />
         </Routes>
       </PagesContainer>
     </>
