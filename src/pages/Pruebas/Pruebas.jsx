@@ -64,7 +64,6 @@ export const Pruebas = () => {
         <Grid
           item xs={12}
           display='flex'
-          wrap='wrap'
           justifyContent='center'
           gap='25px'
         >

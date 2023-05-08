@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
+import { useUsers } from '../../api/useUsers'
 
 
 
 export const HomePage = () => {
 
+  const { getUsers } = useUsers();
+
+  useEffect(() => {
+    getUsers();
+  }, [])
+  
 
   return (
     <Grid 
