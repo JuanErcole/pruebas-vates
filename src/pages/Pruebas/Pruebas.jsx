@@ -37,6 +37,7 @@ export const Pruebas = () => {
   }
 
   const addUser = () => {
+    
     const newUser = {
       id: new Date().getTime(),
       name: 'Juan',
