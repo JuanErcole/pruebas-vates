@@ -26,6 +26,10 @@ const pages = [
   {
     path: '/python',
     name: 'Python',
+  },
+  {
+    path: '/pruebas',
+    name: 'Pruebas',
   }
 ];
 const settings = ['Logout'];

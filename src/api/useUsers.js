@@ -10,9 +10,9 @@ export const useUsers = () => {
     try {
       
       const response = await usersApi.get('/posts');
-      console.log(response);
+      
       setUsers(response.data);
-      console.log(users);
+
     } catch (error) {
       console.log(error);
     }

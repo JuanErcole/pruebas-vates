@@ -2,16 +2,19 @@ import React, { useEffect } from 'react'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import { useUsers } from '../../api/useUsers'
+import { Button } from '@mui/material'
+
+
 
 
 
 export const HomePage = () => {
 
-  const { getUsers } = useUsers();
+  // const { getUsers } = useUsers();
 
-  useEffect(() => {
-    getUsers();
-  }, [])
+  // useEffect(() => {
+  //   getUsers();
+  // }, [])
   
 
   return (
@@ -21,7 +24,7 @@ export const HomePage = () => {
       spacing={2}
     >
       <Grid item xs={12}>
-        <Typography variant="h1">
+        <Typography variant="h1" color='secondary'>
           Bienvenido
         </Typography>
       </Grid>
@@ -32,6 +35,14 @@ export const HomePage = () => {
         <Typography variant="h6" mt='20px' px='150px'>
           Esta es una aplicación donde reuniremos toda la informacion relevante y documentacion necesaria para trabajar en conjunto, facilitando un solo lugar donde podamos consultar dudas o errores que nos hayan pasado, para asi lograr un mejor aprendizaje entre todos.
         </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="h4">
+          para ver las pruebas y ejercicios realizados hasta el momento presiona el boton de abajo.
+        </Typography>
+        <Button variant='contained' mt='250px'>
+          Pruebas
+        </Button>
       </Grid>
     </Grid>
   )

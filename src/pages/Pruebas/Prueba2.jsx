@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography'
 
 
 
-export const Pruebas2 = () => {
+export const Prueba2 = () => {
 
   const [todos, setTodos] = useState([])
 
@@ -18,18 +18,17 @@ export const Pruebas2 = () => {
 
   const handleCheck = (id) => {
 
-    const todoDoneUpdate = todos.find(todo => todo.id === id)
-    // todoDoneUpdate.done = true;
-    const todoIndex = todos.findIndex( todo => todo.id === id )
-
-    // const newTodos = todos.filter(todo => todo.id !== id);
-    // newTodos.push(todoDoneUpdate);
-
-    // setTodos(newTodos);
-
-    todos[todoIndex] = { ...todoDoneUpdate, done: true }
-
-    setTodos([...todos])
+    const newTodos = todos.map(todo => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          done: !todo.done
+        }
+      } else {
+        return todo
+      }
+    })
+    setTodos(newTodos)
 
   }
 
@@ -58,7 +57,7 @@ export const Pruebas2 = () => {
           textAlign='center'
         >
           <Typography variant="h2">
-            pruebas 2
+            Prueba Nro. 2
           </Typography>
         </Grid>
 

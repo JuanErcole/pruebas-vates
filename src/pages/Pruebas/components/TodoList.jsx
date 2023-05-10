@@ -8,11 +8,16 @@ export const TodoList = ({ todos, handleDelete, handleCheck }) => {
 
 
   return (
-    <>
+    <Grid 
+      item 
+      xs={12} 
+      textAlign='center'
+      mt='30px'
+    >
       {todos.length === 0
-        ? <Typography>
-          No hay tareas
-        </Typography>
+        ? <Typography variant='h4'>
+            No hay tareas
+          </Typography>
         : <Grid item xs={12}>
           <ul>
             {todos.map(todo => (
@@ -48,6 +53,6 @@ export const TodoList = ({ todos, handleDelete, handleCheck }) => {
         </Grid>
       }
 
-    </>
+    </Grid>
   )
 }
