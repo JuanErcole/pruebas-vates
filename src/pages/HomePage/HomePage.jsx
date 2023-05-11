@@ -3,12 +3,15 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import { useUsers } from '../../api/useUsers'
 import { Button } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 
 
 
 
 export const HomePage = () => {
+
+  const navigate = useNavigate();
 
   // const { getUsers } = useUsers();
 
@@ -40,7 +43,11 @@ export const HomePage = () => {
         <Typography variant="h4">
           para ver las pruebas y ejercicios realizados hasta el momento presiona el boton de abajo.
         </Typography>
-        <Button variant='contained' mt='250px'>
+        <Button 
+          variant='contained' 
+          mt='250px'
+          onClick={ ()=> navigate('/pruebas') }
+        >
           Pruebas
         </Button>
       </Grid>
