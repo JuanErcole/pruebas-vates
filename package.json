@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.8",
-    "@emotion/styled": "^11.10.8",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@fontsource/montserrat": "^4.5.14",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.3",
@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.3",
     "react-router-dom": "^6.11.1",
-    "styled-components": "^5.3.10"
+    "styled-components": "^6.0.0-rc.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
