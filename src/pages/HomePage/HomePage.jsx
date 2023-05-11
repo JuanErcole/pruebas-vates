@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import CardComponent from "../../components/Card";
 import { Form } from "../../components/Form/Form";
+import { FormEvents } from "../../components/Form/FormEvents";
 
 
 export const HomePage = () => {
@@ -22,7 +23,7 @@ export const HomePage = () => {
           </Typography>
         </Grid> */}
 
-        <Form />
+        <FormEvents />
       </Grid>
     </>
   );

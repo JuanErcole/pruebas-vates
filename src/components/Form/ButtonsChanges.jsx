@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { FormEvents } from "./FormEvents";
 
 export function ButtonsGroup({ handleSubmit }) {
   return (
@@ -13,8 +12,9 @@ export function ButtonsGroup({ handleSubmit }) {
           m: 1,
         },
       }}
-    >
-        <Button key="add" variant="outlined" type="submit" onClick={() => handleSubmit("add")}>
+    >   
+      
+        <Button key="add" variant="outlined" type="submit">
           Agregar Tarea
         </Button>
     </Box>

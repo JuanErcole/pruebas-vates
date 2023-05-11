@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "./Form";
+import { Grid, Typography } from "@mui/material";
 
 export const FormEvents = () => {
 
@@ -28,8 +29,8 @@ export const FormEvents = () => {
 
   const handleSubmit = (tasks, typeTask, description) => {
     
-    setToDos([
-      ...toDos,
+    setTodos([
+      ...todos,
       {
         id: new Date().getTime(),
         tasks,
