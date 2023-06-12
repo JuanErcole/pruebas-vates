@@ -1,8 +1,8 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Prueba1 } from './Prueba1'
 import { Prueba2 } from './Prueba2'
-
+import { Prueba3 } from './Prueba3'
 
 const initialState = { 
   component1: false, 
@@ -17,6 +17,10 @@ const buttons = [
   {
     name: 'component2',
     text: 'Prueba Nro 2'
+  },
+  {
+    name: 'component3',
+    text: 'Prueba Nro 3'
   }
 ]
 
@@ -24,7 +28,7 @@ export const Pruebas = () => {
 
   const [component, setComponent] = useState(initialState)
 
-  const { component1, component2 } = component;
+  const { component1, component2, component3 } = component;
 
   const handleClickShowComponent = (component) => {
     setComponent({
@@ -76,6 +80,7 @@ export const Pruebas = () => {
       </Grid>
       { component1 && <Prueba1 />}
       { component2 && <Prueba2 />}
+      { component3 && <Prueba3 />}
     </Grid>
   )
 }
